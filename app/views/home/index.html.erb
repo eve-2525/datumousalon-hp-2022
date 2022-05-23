@@ -29,10 +29,12 @@
 
 <body id="top">
 
-<header class="container py-3">
+<%# <header class="container py-3">
   <h1 class="text-center">
-    <a href="index.html"><%= image_tag src="logo-mark.png" %></a>
-  </h1>
+    <a href="index.html"> %>
+    <%#= image_tag src="logo-mark.png" %>
+    <%# </a> %>
+  <%# </h1>
   <nav class="navbar navbar-expand-md navbar-light">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替">
       <span class="navbar-toggler-icon"></span>
@@ -55,38 +57,104 @@
       </ul>
     </div>
   </nav>
+</header> %>
+
+<header class="top-page">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container"> <a class="navbar-brand" href="#">
+        <%#= image_tag src="template-logo01-wt.png" , class:"logo"%>
+        </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar" aria-controls="Navbar" aria-expanded="false" aria-label="ナビゲーションの切替"> <span class="navbar-toggler-icon"></span> </button>
+            <div class="collapse navbar-collapse" id="Navbar">
+                <ul class="navbar-nav mr-auto py-3 py-lg-0 mt-3 mt-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="#sec1">MENU</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#sec2">MENU</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#sec3">MENU</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#sec4">MENU</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="#sec5">MENU</a> </li>
+                </ul>
+                <div class="text-center text-white pb-2 pb-lg-0"> <a class="btn btn-block btn-outline-light py-3 font-weight-bold" href="contact/index.html" role="button">Webでのご予約はこちら</a> </div>
+            </div>
+        </div>
+    </nav>
+    <!-- /.jumbotron --> 
 </header>
+
 
 <main>
   <!-- content1: top -->
   <section class="mb-5 position-relative" >
-    <div class="jumbotron wf-penta rounded-0" >
+    <div class="jumbotron rounded-0" >
       <div class="container py-4">
-        <h1 class="wf-slope-text pb-lg-4 font-weight-bold mb-3">脱毛！！</h1>
+        <h1 class="wf-slope-text pb-lg-4 font-weight-bold mb-3">全身脱毛9,800円！！</h1>
         <div class="row">
           <h2 class="col-lg-6 font-weight-bold">
-            <p class="d-block d-lg-none">3時間で理想の人生をみつけるセルフヘルプ体験講座</p>
-            <p class="d-none d-lg-block">3時間で理想の人生をみつける<br class="d-none d-lg-block"><span class="float-right">マインドアップ体験講座</span></p>
+            <%# <p class="d-block d-lg-none">3時間で理想の人生をみつけるセルフヘルプ体験講座</p> %>
+            <p class="d-none d-lg-block">新宿から電車で5分！<br class="d-none d-lg-block"><span class="float-right">信濃町の駅近隠れ家サロン</span></p>
           </h2>
         </div>
         <p class="col-lg-8">
-          小学校に居る時分学校の二階から飛び降りて、一週間ほど腰を事がある。</p>
+          ギリギリ価格の脱毛！　男の清潔感は、「肌」で決まる。</p>
         <p class="col-lg-8 d-none d-lg-block">
-          親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて、一週間ほど腰を抜かした事がある。
+          お客様にも、お肌にも、お財布にも優しい脱毛サロン♪
         </p>
       </div>
     </div>
     <div class="position-absolute mx-auto" style="bottom:40px;left: 0; right: 0; z-index:999px !important;">
-      <div class="text-center"><a class="btn btn-dark btn-lg p-4" href="contact/index.html" role="button">体験セッションお申し込み<i class="fas fa-arrow-right ml-3"></i></a></div>
+      <div class="text-center"><a class="btn btn-dark btn-lg p-4" href="contact/index.html" role="button">今すぐ予約<i class="fas fa-arrow-right ml-3"></i></a></div>
     </div>
     </section>
     
+   <!------------------------------------------------------------------------>
+
+  <section class="container-fluid text-center bg-secondary py-5">
+    <h3 class="text-white font-weight-bold ls mb-0">
+      あなたは今の自分で本当に満足していますか？
+    </h3>
+  </section>
+
+   <!------------------------------------------------------------------------>
+    <hr>
+    <section id="sec2" class="py-5 container">
+            <h2 class="font-weight-bold text-center ttl-bdr">MAIN MENU</h2>
+        <div class="row py-4">
+            <div class="col-md-7 text-center mb-4">
+                <h3 class="h1 font-weight-bold">全身脱毛</h3>
+                <p class="h2 text-muted">9,800円</p>
+                <p class="lead text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <a href="sample/index.html" type="button" class="btn-secondary btn-lg">Read More</a>
+            </div>
+            <div class="col-md-5"> <%= image_tag src="publiczensin.jpeg" ,class:"card-img-top rounded-0" %> </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+            <div class="col-md-7 text-center order-md-2 mb-4">
+                <h3 class="h1 font-weight-bold">ヒゲ脱毛</h3>
+                <p class="h2 text-muted">6,000円</p>
+                <p class="lead text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <a href="sample/index.html" type="button" class="btn-secondary btn-lg mb-3">Read More</a>
+            </div>
+            <div class="col-md-5 order-md-1"> <%= image_tag src="publichige.jpeg" ,class:"card-img-top rounded-0"  %> </div>
+        </div>
+        <hr>
+        <div class="row py-4">
+            <div class="col-md-7 text-center mb-4">
+                <h3 class="h1 font-weight-bold">TITLE</h3>
+                <p class="h2 text-muted">With faded secondary text</p>
+                <p class="lead text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+                <a href="sample/index.html" type="button" class="btn-secondary btn-lg mb-3">Read More</a>
+            </div>
+            <div class="col-md-5"> <img class="card-img-top rounded-0" src="img/img-03.jpg" alt="カード画像のキャプション3"> </div>
+        </div>
+    </section>
+    <!------------------------------------------------------------------------>
+
     <!-- 3 circles -->
     <section class="mb-5">
     <div class="container">
       <div class="row">
         <h3 class="col-md-4">
-          <p class="circle">受講生<br>満足度<br>98％</p>
+          <p class="circle">顧客<br>満足度<br>98％</p>
         </h3>
         <h3 class="col-md-4">
           <p class="circle">安心の<br>アフター<br>フォロー</p>
@@ -98,24 +166,18 @@
     </div>
   </section>
 
-  <section class="container-fluid text-center bg-secondary py-5">
-    <h3 class="text-white font-weight-bold ls mb-0">
-      あなたは今の自分で本当に満足していますか？
-    </h3>
-  </section>
-
   <!-- content2: user-background -->
 
   <section class="py-5">
     <div class="container">
-      <p>木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。</p>
+      <p>お客さまの声</p>
 
       <div class="row mt-4">
         <div class="col-lg-9 col-12 order-lg-2">
           <div class="wf-balloon wf-balloon-left px-4">
             <h3 class="font-weight-bold">自分が嫌いで自信がないAさん</h3>
             <p class="font-weight-bold text-muted">サブタイトル</p>
-            <p>木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。</p>
+            <p>脱毛行ってよかったよ！</p>
           </div>
         </div>
         <div class="col-lg-3 col-12 order-lg-1">
@@ -127,7 +189,7 @@
           <div class="wf-balloon wf-balloon-right px-4">
             <h3 class="font-weight-bold">人生に夢や希望が持てないBさん</h3>
             <p class="font-weight-bold text-muted">サブタイトル</p>
-            <p>木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。</p>
+            <p>そうだね！行くべきだよ！</p>
           </div>
         </div>
         <div class="col-lg-3 col-12">
@@ -141,24 +203,24 @@
 
   <section class="container-fluid text-center bg-secondary py-5">
     <h3 class="text-white font-weight-bold ls mb-0">
-      人は自分ひとりきりでは決して変われません！
+      最新の脱毛は痛くない！安心、安全！
     </h3>
   </section>
 
 
   <div class="container-fluid text-center bg-light wf-bg-balloon">
     <h3 class="font-weight-bold ls p-3">
-      「変わりたい」と思う あなたの気持ちを 本気でお手伝いいたします
+      ムダ毛処理 髭剃りの時間から 解放します
     </h3>
   </div>
 
-  <section class="py-5">
+  <%# <section class="py-5">
     <div class="container">
       <div class="row">
 
-        <div class="col-md-5 mb-3 mb-lg-0">
-           <%= image_tag src="lens.jpg"  ,class:"img-fluid h-100" %>
-        </div>
+        <div class="col-md-5 mb-3 mb-lg-0"> %>
+           <%#= image_tag src="lens.jpg"  ,class:"img-fluid h-100" %>
+        <%# </div>
 
         <div class="col-md-7">
           <h3 class="text-center font-weight-bold h2 mb-3">
@@ -188,31 +250,31 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> %>
 
   <!-- content4: greeting -->
   <section class="py-5 bg-light">
     <div class="container py-5">
       <div class="row mb-5">
         <div class="col-md-7 mb-3">
-           <%= image_tag src="boss1.jpg" , class:"img-fluid h-100" %>
+           <%= image_tag src="biganki.png" , class:"img-fluid h-100" %>
         </div>
         <div class="col-md-5">
-          <h3 class="text-center font-weight-bold mb-3">代表挨拶</h3>
-          <p class="text-center mb-3 h5">サブタイトルが入りますサブタイトルが入ります</p>
+          <h3 class="text-center font-weight-bold mb-3">脱毛器の紹介</h3>
+          <p class="text-center mb-3 h5">この機械は素晴らしい</p>
           <p>
-            親譲りの無鉄砲で⼩供の時から損ばかりしている。⼩学校に居る時分学校の⼆階から⾶び降りて⼀週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く⼈があるかも知れぬ。別段深い理由でもない。新築の⼆階から⾸を出していたら、同級⽣の⼀⼈が冗談に、いくら威張っても、そこから⾶び降りる事は出来まい。弱⾍やーい。と囃したからである。⼩使に負ぶさって帰って来た時、おやじが⼤きな眼をして⼆階ぐらいから⾶び降りて腰を抜かす奴があるかと云ったか
+            全身脱毛は一ヶ月に一回ペースで通うよ
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-7">
           <p>
-            ここにいたるまでの経緯。親譲りの無鉄砲で⼩供の時から損ばかりしている。⼩学校に居る時分学校の⼆階から⾶び降りて⼀週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く⼈があるかも知れぬ。別段深い理由でもない。新築の⼆階から⾸を出していたら、同級⽣の⼀⼈が冗談に、いくら威張っても、そこから⾶び降りる事は出来まい。弱⾍やーい。と囃したからである。⼩使に負ぶさって帰って来た時、おやじが⼤きな眼をして⼆階ぐらいから⾶び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに⾶んで⾒せますと答えた
+            全身脱毛、それは新しい自分との出会い笑
           </p>
         </div>
         <div class="col-md-5">
-           <%= image_tag src="boss2.jpg" , class:"img-fluid h-100" %>
+           <%= image_tag src="biganki.png" , class:"img-fluid h-100" %>
         </div>
       </div>
     </div>
@@ -222,14 +284,14 @@
   <section class="py-5">
     <div class="container">
       <h3 class="border-bottom border-secondary col-lg-8 bw-2 p-3 mb-3">こんな方におすすめ</h3>
-      <p>なぜ、そんなことになっているのかを説明する⽂章。この⽂章はダミーです。⽂字の⼤きさ、量、字間、⾏間等を確認するために⼊れています。この⽂ 章はダミーです。⽂字の⼤きさ、量、字間、⾏間等を確認するために⼊れています。この⽂章はダミーです。</p>
+      <p>脱毛いいよ</p>
       <div class="row">
         <div class="col-md-4">
           <div class="card mt-4">
             <div class="card-body bg-light p-4">
               <p class="card-subtitle text-muted text-center">STORY 0.1</p>
-              <h5 class="card-title font-weight-bold mt-2 text-center">タイトルが入ります</h3>
-                <p class="card-text">木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
+              <h5 class="card-title font-weight-bold mt-2 text-center">モテたい人へ</h3>
+                <p class="card-text">ヒゲなくなってモテました</p>
             </div>
           </div>
         </div>
@@ -237,8 +299,8 @@
           <div class="card mt-4">
             <div class="card-body bg-light p-4">
               <p class="card-subtitle text-muted text-center">STORY 0.1</p>
-              <h5 class="card-title font-weight-bold mt-2 text-center">タイトルが入ります</h3>
-                <p class="card-text">木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
+              <h5 class="card-title font-weight-bold mt-2 text-center">髭剃り面倒</h3>
+                <p class="card-text">髭剃りの時間なくなりました</p>
             </div>
           </div>
         </div>
@@ -246,8 +308,8 @@
           <div class="card mt-4">
             <div class="card-body bg-light p-4">
               <p class="card-subtitle text-muted text-center">STORY 0.1</p>
-              <h5 class="card-title font-weight-bold mt-2 text-center">タイトルが入ります</h3>
-                <p class="card-text">木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
+              <h5 class="card-title font-weight-bold mt-2 text-center">旅行行きたい</h3>
+                <p class="card-text">そろそろ海外行きたい</p>
             </div>
           </div>
         </div>
@@ -257,8 +319,8 @@
           <div class="card mt-4">
             <div class="card-body bg-light p-4">
               <p class="card-subtitle text-muted text-center">STORY 0.1</p>
-              <h5 class="card-title font-weight-bold mt-2 text-center">タイトルが入ります</h3>
-                <p class="card-text">木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
+              <h5 class="card-title font-weight-bold mt-2 text-center">急に女の子から話しかけられて</h3>
+                <p class="card-text">クラスでぼっちな冴えない僕にも脱毛したら彼女ができました</p>
             </div>
           </div>
         </div>
@@ -266,8 +328,8 @@
           <div class="card mt-4">
             <div class="card-body bg-light p-4">
               <p class="card-subtitle text-muted text-center">STORY 0.1</p>
-              <h5 class="card-title font-weight-bold mt-2 text-center">タイトルが入ります</h3>
-                <p class="card-text">木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
+              <h5 class="card-title font-weight-bold mt-2 text-center">もう朝の5時だよ</h3>
+                <p class="card-text">あとi時間くらいで寝る</p>
             </div>
           </div>
         </div>
@@ -275,8 +337,8 @@
           <div class="card mt-4">
             <div class="card-body bg-light p-4">
               <p class="card-subtitle text-muted text-center">STORY 0.1</p>
-              <h5 class="card-title font-weight-bold mt-2 text-center">タイトルが入ります</h3>
-                <p class="card-text">木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。</p>
+              <h5 class="card-title font-weight-bold mt-2 text-center">ネタ無くなった</h3>
+                <p class="card-text">キャッチコピー募集中</p>
             </div>
           </div>
         </div>
@@ -284,7 +346,7 @@
     </div>
   </section>
 
-  <section class="py-5 bg-secondary text-white">
+  <%# <section class="py-5 bg-secondary text-white">
     <div class="container">
       <div class="w-75 mx-auto">
         <h3 class="text-center font-weight-bold ls mb-3">
@@ -304,9 +366,9 @@
         </a>
       </div>
     </div>
-  </section>
+  </section> %>
 
-  <section class="py-5">
+  <%# <section class="py-5">
     <div class="container py-4">
       <h3 class="border-bottom border-secondary col-lg-8 bw-2 p-3 mb-3">3時間の体験セミナーで得られること</h3>
       <p class="text-muted mt-4">親譲りの無鉄砲で⼩供の時から損ばかりしている。⼩学校に居る時分学校の⼆階から⾶び降りて⼀週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く⼈があるかも知れぬ。別段深い理由でもない。</p>
@@ -329,24 +391,24 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-4">
-           <%= image_tag src="stepup.jpg" , class:"img-fluid"%>
-        </div>
+        <div class="col-lg-4"> %>
+           <%#= image_tag src="stepup.jpg" , class:"img-fluid"%>
+        <%# </div>
       </div>
     </div>
-  </section>
+  </section> %>
 
-  <section class="bg-light py-5">
+  <%# <section class="bg-light py-5">
     <div class="container">
       <h3 class="text-center mb-3">あなたが相談してよかったと思える安心感がここにあります。</h3>
       <a href="#" class="btn btn-dark btn-block btn-lg p-3 w-75 mx-auto" role="button" aria-pressed="true">
         いますぐ体験セッションに申し込む<i class="fas fa-arrow-right ml-3"></i>
       </a>
     </div>
-  </section>
+  </section> %>
 
   <!-- content7: history -->
-  <section class="py-5">
+  <%# <section class="py-5">
     <div class="container py-4">
       <h3 class="border-bottom border-secondary col-lg-8 bw-2 p-3 mb-3">更新履歴</h3>
       <div class="container">
@@ -365,21 +427,21 @@
           <hr>
         </dl>
         <p class="mt-2 text-right"><a href="./sample/" class="icon-link">一覧を見る</a></p>
-      </div><!-- /.container -->
+      </div>
     </div>
-  </section>
+  </section> %>
 
   <!-- content8: review -->
   <section class="py-5 bg-light">
     <div class="container py-4">
       <h3 class="border-bottom border-secondary col-lg-8 bw-2 p-3 mb-3">体験者の声</h3>
-      <p>木曾路はすべて山の中である。あるところは岨づたいに行く崖の道であり、あるところは数十間の深さに臨む木曾川の岸であり、あるところは山の尾をめぐる谷の入り口である。一筋の街道はこの深い森林地帯を貫いていた。東ざかいの桜沢から、西の十曲峠まで、木曾十一宿はこの街道に添うて、二十二里余にわたる長い谿谷の間に散在していた。道路の位置も幾たびか改まったもので、古道はいつのまにか深い山間に埋もれた。</p>
+      <p>このあたりにブログかなと考え中</p>
       <div class="row mt-4">
         <div class="col-md-4 mt-2">
           <div class="bg-dark text-white comment-box mb-3 down-balloon">
             <h4 class="mt-2 mb-0">山田 太郎</h4>
             <span class="text-muted mt-0">CO-FOUNDER &amp; CTO</span>
-            <p class="text-muted mt-2">親譲おやゆずりの無鉄砲むてっぽうで小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰こしを抜ぬかした事がある。なぜそんな無闇むやみをした</p>
+            <p class="text-muted mt-2">ヒゲ脱毛は実は痛い　今主流の脱毛って日本人は向いてると思ってる　黒い毛に反応して肌が白いほうが効果が高い</p>
           </div>
            <%= image_tag src="voice1.jpg" , class:"img-fluid"%>
         </div>
@@ -388,14 +450,14 @@
           <div class="bg-dark text-white comment-box mt-3 up-balloon">
             <h4 class="mt-2 mb-0">山田 太郎</h4>
             <span class="text-muted mt-0">CO-FOUNDER &amp; CTO</span>
-            <p class="text-muted mt-2">親譲おやゆずりの無鉄砲むてっぽうで小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰こしを抜ぬかした事がある。なぜそんな無闇むやみをした</p>
+            <p class="text-muted mt-2">あと20分で朝6時　ここの文章短いとレイアウト崩れるね笑笑</p>
           </div>
         </div>
         <div class="col-md-4 mt-2">
           <div class="bg-dark text-white comment-box mb-3 down-balloon">
             <h4 class="mt-2 mb-0">山田 太郎</h4>
             <span class="text-muted mt-0">CO-FOUNDER &amp; CTO</span>
-            <p class="text-muted mt-2">親譲おやゆずりの無鉄砲むてっぽうで小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰こしを抜ぬかした事がある。なぜそんな無闇むやみをした</p>
+            <p class="text-muted mt-2">申し込みまでの流れとかもあったほうがいいのかも　明日にします　今日は寝る</p>
           </div>
            <%= image_tag src="voice1.jpg" , class:"img-fluid"%>
         </div>
@@ -403,64 +465,104 @@
     </div>
   </section>
 
-  <!-- content9: profile -->
-  <section class="py-5">
-    <div class="container py-4">
-      <h3 class="border-bottom border-secondary col-lg-8 bw-2 p-3 mb-3">会社概要</h3>
-      <table class="table table-borderless">
-        <t-body>
-          <tr>
-            <td class="pl-4">会社名</td>
-            <td>株式会社 SAMPLE CORPORATE</td>
-          </tr>
-          <tr>
-            <td class="pl-4">所在地</td>
-            <td>東京都港区芝8丁目0-0 ビジネスビル1F</td>
-          </tr>
-          <tr>
-            <td class="pl-4">代表取締役</td>
-            <td>山田 太郎</td>
-          </tr>
-          <tr>
-            <td class="pl-4">設立</td>
-            <td>2014年1月</td>
-          </tr>
-          <tr>
-            <td class="pl-4">資本金</td>
-            <td>100,000,000円</td>
-          </tr>
-        </t-body>
-      </table>
-    </div>
-  </section>
+    <!------------------------------------------------------------------------>
+    <section class="container py-5" id="sec5">
+        <div class="row flex-row-reverse">
+            <div class="col-12 col-lg-6">
+            <img src="img/template-logo01.png" alt="footer logo" class="footer-logo mb-3 d-block d-md-none">    
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3240.830828060774!2d139.7648629!3d35.6811673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1540728928735"  frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-12 col-lg-6"><img src="img/template-logo01.png" alt="footer logo" class="footer-logo mb-3 d-none d-md-block">
+                        <dl class="text-secondary text-left mb-0">
+                        <dt class="float-md-left">住所：</dt><dd>東京都港区芝8丁目0-0 ビジネスビル1F</dd>
+                        	<dt class="float-md-left">営業時間：</dt><dd>11：00〜24：00（LO. 23:00）</dd>
+                        <dt class="float-md-left">アクセス：</dt>
+                        <dd>JR「浜松町」下車　徒歩12分、都営地下鉄三田線「芝公園」（I05）下車　徒歩2分<br>
+                            都営地下鉄浅草線・大江戸線「大門」（A09･E20）下車　徒歩5分</dd>
+                        <dt class="float-md-left">定休⽇：</dt><dd>⽇曜⽇</dd>
+                    </dl>        
+                      <p class="text-left">※ Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
+                <div class="social mb-3 text-center">
+                    <!-- Twitter  --> 
+                    <a href="http://twitter.com/share?url=あなたのサイトURL&amp;text=エンコードした説明文" onclick="window.open(this.href, 'twitter_tweet', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;"><img src="img/sns.svg" alt="Twitter logo" class="mx-1"></a> 
+                    <!-- Facebook   --> 
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=あなたのサイトURL" onclick="window.open(this.href, 'fb_window', 'width=450, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" target="blank"><img src="img/sns.svg" alt="Facebook logo" class="mx-1"></a> </div>
+                <div class="border text-center p-2 rounded">
+                    <p class="m-0">お電話でのご予約はこちら</p>
+                    <p class="tel m-0 h3">03-1234-5678</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!------------------------------------------------------------------------> 
 </main>
 
+<footer class="bg-light">
+    <%# <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-4 col-12">
+                <h5>メニューリスト</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">ランチ</a></li>
+                    <li><a class="text-muted" href="#">ディナー</a></li>
+                    <li><a class="text-muted" href="#">デザート</a></li>
+                    <li><a class="text-muted" href="#">ドリンク</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+                <h5>menu</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">link</a></li>
+                    <li><a class="text-muted" href="#">link</a></li>
+                    <li><a class="text-muted" href="#">link</a></li>
+                    <li><a class="text-muted" href="#">link</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-12">
+                <h5>menu</h5>
+                <ul class="list-unstyled text-small">
+                    <li><a class="text-muted" href="#">link</a></li>
+                    <li><a class="text-muted" href="#">link</a></li>
+                    <li><a class="text-muted" href="#">link</a></li>
+                    <li><a class="text-muted" href="#">link</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> %>
+    <div class="bg-dark text-white py-3">
+        <div class="text-center">
+            <h6>20XX© あなたのサイト名 All Rights Reserved </h6>
+        </div>
+    </div>
+</footer>
+
 <!-- footer -->
-<footer class="bg-dark text-light p-0">
-  <div class="container">
+<%# <footer class="bg-dark text-light p-0">
+  <div class="container"> %>
     <!-- left contents -->
-    <div class="row">
+    <%# <div class="row">
       <div class="col-md-6 mr-auto my-4">
-        <span class="mr-4">2019 © あなたのサイト名</span>
-        <!-- Twitter -->
+        <span class="mr-4">2019 © あなたのサイト名</span> %>
+        <%# <!-- Twitter -->
         <a href="http://twitter.com/share?url=あなたのサイトURL&amp;text=エンコードした説明文" onclick="window.open(this.href, 'twitter_tweet', 'width=550, height=450,personalbar=0,toolbar=0,scrollbars=1,resizable=1'); return false;">
            <%= image_tag src="sns.svg" , class:"d-inline wf-square-xs" %>
-        </a>
+        <%# </a> %>
         <!-- facebook -->
-        <a href="https://www.facebook.com/sharer/sharer.php?u=あなたのサイトURL" class="mr-auto" onclick="window.open(this.href, 'fb_window', 'width=450, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" target="blank">
-           <%= image_tag src="sns.svg" , class:"d-inline wf-square-xs" %>
-        </a>
-      </div>
+        <%# <a href="https://www.facebook.com/sharer/sharer.php?u=あなたのサイトURL" class="mr-auto" onclick="window.open(this.href, 'fb_window', 'width=450, height=300, menubar=no, toolbar=no, scrollbars=yes'); return false;" target="blank">
+          <%= image_tag src="sns.svg" , class:"d-inline wf-square-xs" %>
+        <%# </a>
+      </div> %>
       <!-- right contents -->
-      <a href="./contact" class="col-xs-3 text-white mx-4 my-4">お問い合わせ</a>
+      <%# <a href="./contact" class="col-xs-3 text-white mx-4 my-4">お問い合わせ</a>
       <a href="#" class="col-xs-3 text-white my-4">プライバシーポリシー</a>
     </div>
-  </div>
+  </div> %>
   <!-- button to top page -->
-  <a href="#top" class="d-none d-md-block position-fixed wf-gotta-top text-center p-3">
+  <%# <a href="#top" class="d-none d-md-block position-fixed wf-gotta-top text-center p-3">
     <i class="fas fa-arrow-up fa-3x text-white"></i>
   </a>
-</footer>
+</footer> %>
 
 <!-- add Bootstrap4 -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
