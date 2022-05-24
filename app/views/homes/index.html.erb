@@ -122,7 +122,8 @@
                 <h3 class="h1 font-weight-bold">全身脱毛</h3>
                 <p class="h2 text-muted">9,800円</p>
                 <p class="lead text-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
-                <a href="sample/index.html" type="button" class="btn-secondary btn-lg">Read More</a>
+                <%#= link_to 'Read More', menu_home_path(@home.id) , method: :GET ,type:"button" ,class:"btn-secondary btn-lg"%>
+                <%# <a href="sample/index.html" type="button" class="btn-secondary btn-lg">Read More</a> %>
             </div>
             <div class="col-md-5"> <%= image_tag src="publiczensin.jpeg" ,class:"card-img-top rounded-0" %> </div>
         </div>
