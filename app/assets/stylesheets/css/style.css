@@ -63,11 +63,14 @@ font-family: 'Big Shoulders Display', cursive;
   background-size: cover;
   height: 100%;
 min-height: 600px;
-background-size: 100% 100%;
+/* background-size: 100% 100%; */
 }
 
-
-
+@media screen and (max-width: 576px) {
+  .jumbotron {
+    background-image: url('1urbvjrlzaLmLqo1656405244_1656405312.jpg');
+  }
+}
 
 
 /** パンくずリストのセパレータ変更 **/
