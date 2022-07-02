@@ -2,12 +2,12 @@ class HomesController < ApplicationController
 
   def index
     @homes = Home.all
-    render :action => 'index'
+    # render :action => 'index'
 
   end
 
   def new
-    @home = Home.new
+    @inquiry = Inquiry.new
   end
 
 
@@ -17,10 +17,10 @@ class HomesController < ApplicationController
     # @home = Home.find(params[:id])
   end
 
-  def create
-    @home = Home.new(home_params)
-    if @home.save
-      InquiryMailer.contact_mail(@home).deliver
+  def confirm
+    @inquiry = Inquiry.new(inquiry_params)
+    if @inquiry.valid?
+      InquiryMailer.contact_mail(@inquiry).deliver
       redirect_to root_path, notice: 'お問い合わせ内容を送信しました'
     else
       render :index
@@ -31,8 +31,8 @@ class HomesController < ApplicationController
   private
 
     # Only allow a list of trusted parameters through.
-    def home_params
-      params.require(:home).permit(:name, :email, :message)
+    def inquiry_params
+      params.require(:inquiry).permit(:name, :email, :message)
     end
 
 
