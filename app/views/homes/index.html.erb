@@ -107,33 +107,20 @@
           <p>
             IPL・SHR、2種類の光を使ったハイブリッド脱毛でどんな毛にも対応可能！
 日本最高スペック、高出力で1回で脱毛効果を実感できます！
-黒い色に反応する従来の方法では、色素の薄いうぶ毛・金
-髪は処理ができませんでしたが、SHR脱毛は毛包に働きか
-けるため、うぶ毛でも処理が可能です。
-また、従来の方法ではシミやホクロ、日焼け肌にも反応し
-てしまい肌トラブルになることもありましたが、SHR脱毛
-は色ではなく毛包にアプローチして処理する方法のため、
-日焼け肌やホクロ等があっても安心して施術できます。
+
           </p>
         </div>
       </div>
       <div class="row">
         <div class="col-md-7">
-                  <p class="text-center mb-3 h5">毛周期に関係なく脱毛できるから通いやすい</p>
+                  <p class="text-center mb-3 h5"></p>
           <p>
           <p>
-            従来の脱毛方法では、毛根が休眠している時期に施術をし
-ても効果がないため、毛根が活動するタイミングを待つ必
-要があり、人によっては完了まで数年かかることもありま
-した。
-SHR脱毛モードを使用して、毛周期に関係なく毛包への施
-術が可能になったため、好きなときに通えるだけでなく、
-IPL脱毛等に比べて短い期間でムダ毛のないキレイなお肌
-の実現が可能になりました
+
           </p>
         </div>
         <div class="col-md-5">
-           <%= image_tag src="a397ec707c705109125a9047cf41c362.png" , class:"img-fluid h-100" %>
+           <%= image_tag src="c3ed43b2637019a172a7d7fee993e7ef.png" , class:"img-fluid h-100" %>
         </div>
       </div>
     </div>
@@ -499,46 +486,12 @@ IPL脱毛等に比べて短い期間でムダ毛のないキレイなお肌
     <section class="position-relative pt-5">
         <div class="bg-lightblue half half-info"></div>
         <div class="container text-center position-relative bg-lightblue">
-            <h2 class="h3 dot font-weight-bold pt-3 pb-5 px-0 mb-0">お問い合せ</h2>
+            <h2 class="h3 dot font-weight-bold pt-3 pb-5 px-0 mb-0">
+                <%= link_to 'お問い合わせはこちら', "https://docs.google.com/forms/d/e/1FAIpQLSdlgfXap--xBMwW4847AxHx5KUAn3aPozvnUvYmAFWIMRY4OQ/viewform?usp=sf_link" %>
+            </h2>
         </div>
-        <div class="bg-lightblue pb-5">
-            <div class="container pb-5">
+        
 
-                <%= form_with(model: @inquiry, local: true) do |f| %>
-
-                    <div class="form-group row">
-                        <label for="name" class="col-sm-4 col-form-label">お名前<span class="badge badge-pill badge-info ml-2">必須</span></label>
-                        <div class="col-sm-8">
-                            <%# <input type="text" class="form-control" id="name" required> %>
-                            <%= f.text_field :name, class:"form-control", id:"name" %>
-                        </div>
-                    </div>
-                
-                    <div class="form-group row">
-                        <label for="email" class="col-sm-4 col-form-label mod-email-lavel">メールアドレス<span class="badge badge-pill badge-info ml-2">必須</span></label>
-                        <div class="col-sm-8">
-                            <%# <input type="email" class="form-control" id="email" required> %>
-                            <%= f.text_field :email, class:"form-control", id:"email" %>
-                        </div>
-                    </div>
-                   
-                    <div class="form-group row pb-5">
-                        <label for="textarea" class="col-sm-4 col-form-label">お問合せ内容<span class="badge badge-pill badge-info ml-2">必須</span></label>
-                        <div class="col-sm-8">
-                            <%# <textarea class="form-control" id="textarea" rows="6" required></textarea> %>
-                            <%= f.text_area :message, class:"form-control", id:"textarea", rows:"6" %>
-                                                        <%# <textarea class="form-control" id="textarea" rows="6" required></textarea> %>
-                        </div>
-                    </div>
-                    <div class="text-center">
-                        <%# <button type="submit" class="btn py-2 btn-danger rounded-pill">送信する</button> %>
-                          <%= f.submit '送信する', class: 'btn py-2 btn-danger rounded-pill' %>
-                    </div>
-                    
-                <% end %>
-
-            </div>
-        </div>
     </section>
 </main>
 
@@ -547,16 +500,17 @@ IPL脱毛等に比べて短い期間でムダ毛のないキレイなお肌
         <div class="row flex-row-reverse">
             <div class="col-12 col-lg-6">
             <img src="img/template-logo01.png" alt="footer logo" class="footer-logo mb-3 d-block d-md-none">    
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3240.830828060774!2d139.7648629!3d35.6811673!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188bfbd89f700b%3A0x277c49ba34ed38!2z5p2x5Lqs6aeF!5e0!3m2!1sja!2sjp!4v1540728928735"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.7481883431774!2d139.7158426516347!3d35.683201880096505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c930ce1d6b7%3A0xa91a74d3ea608a70!2z44CSMTYwLTAwMTYg5p2x5Lqs6YO95paw5a6_5Yy65L-h5r-D55S677yW4oiS77yT!5e0!3m2!1sja!2sjp!4v1657370706315!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            <div class="col-12 col-lg-6"><img src="img/template-logo01.png" alt="footer logo" class="footer-logo mb-3 d-none d-md-block">
+            <div class="col-12 col-lg-6">
+            <%# <img src="img/template-logo01.png" alt="footer logo" class="footer-logo mb-3 d-none d-md-block"> %>
                         <dl class="text-secondary text-left mb-0">
-                        <dt class="float-md-left">住所：</dt><dd>東京都港区芝8丁目0-0 ビジネスビル1F</dd>
+                        <dt class="float-md-left">住所：</dt><dd>東京都新宿区信濃町6-3 シャインエイト103号室</dd>
                         	<dt class="float-md-left">営業時間：</dt><dd>11：00〜24：00（LO. 23:00）</dd>
                         <dt class="float-md-left">アクセス：</dt>
-                        <dd>JR「浜松町」下車　徒歩12分、都営地下鉄三田線「芝公園」（I05）下車　徒歩2分<br>
-                            都営地下鉄浅草線・大江戸線「大門」（A09･E20）下車　徒歩5分</dd>
-                        <dt class="float-md-left">定休⽇：</dt><dd>⽇曜⽇</dd>
+                        <dd>JR「信濃町」下車　徒歩5分、東京メトロ丸ノ内線「四谷三丁目」（1番出口）下車　徒歩8分<br>
+                            <%# 都営地下鉄浅草線・大江戸線「大門」（A09･E20）下車　徒歩5分</dd> %>
+                        <dt class="float-md-left">定休⽇：</dt><dd>不定休</dd>
                     </dl>        
                       <p class="text-left">※ Their separate existence is a myth. For science, music, sport, etc, Europe uses the same vocabulary.</p>
                 <div class="social mb-3 text-center">
